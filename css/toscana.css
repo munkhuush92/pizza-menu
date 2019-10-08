@@ -1,0 +1,105 @@
+  * {
+   box-sizing: border-box; 
+  }
+  body {
+    margin: 0;
+  }
+
+
+  h5 {
+    font-family: 'Volkhov', serif !important; 
+    color: #fff !important;
+    font-weight: 500 !important;
+    }
+
+  
+  #main {
+    display: flex;
+    min-height: calc(100vh - 30vh);
+  }
+  #main > article {
+    padding-top: 15px;
+    flex: 1;
+    color: white;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+    background: beige;
+  }
+  #main > nav {
+    order: -1;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  header, footer {
+    height: 30vh;
+  }
+
+  .card-text {
+    font-family: 'Asap', sans-serif;
+        margin-top: 20px;
+             line-height: 2.5;
+  }
+
+  #main-container {
+      background: url(../resources/images/orig_582759.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+.list-group-item {
+  font-family: 'Candal', sans-serif!important;
+  font-weight: 900 !important;
+  font-size: 1.3rem;
+
+}
+
+
+
+.ribbon {
+  font-size: 25px !important;
+  width: 85%;
+  position: relative;
+  background: #F65B59;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+ }
+ .ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #D2534C;
+  z-index: -1;
+ }
+ .ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+ }
+ .ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+ }
+ .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+ }
+ .ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+ }
+ .ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+ }
